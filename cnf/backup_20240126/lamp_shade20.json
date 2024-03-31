@@ -1,0 +1,55 @@
+{
+    "settings":{
+	"trayName":"lamp_shade20",
+	"holeRotation":-228.0, 
+	"overlap":0.0,
+	"bbox":[ 802.0, -148.5, 1012.0, 148.5 ],
+	"pagesize":[210.0,297.0]
+    },
+    
+    "shape":{
+	"polyline_inRT.01":{
+	    "shapeType":"polyline_inRT",
+	    "center":[0.0,0.0],
+	    "linetype":"solid",
+	    "label.edges":[3],
+	    "label.fraction":[0.5],
+	    "label.WL":[30.0,160.0],
+	    "points_rt":[ [1000.0, -6.0 ],
+			  [ 810.0, -6.0 ],
+			  [ 810.0,  6.0 ],
+			  [1000.0,  6.0 ] ]
+	},
+	"polyline_side.01":{
+	    "shapeType":"polyline_side",
+	    "center":[0.0,0.0],
+	    "points_rt":[ [ 1000.0, -6.0 ],
+			  [ 1000.0,  6.0 ] ],
+	    "width":10.0
+	},
+	"dashedline_inRT.01":{
+	    "center":[0.0,0.0],
+	    "shapeType":"polyline_inRT",
+	    "center":[0.0,0.0],
+	    "linetype":"dashed",
+	    "dashed.nDiv":16,
+	    "points_rt":[ [ 1000.0, -6.0 ],
+			  [ 1000.0,  6.0 ] ]
+	},
+	"MountSquare.01":{
+	    "shapeType":"rectangular",
+	    "center":[ 957, -49.75 ],
+	    "wh_length":[24.0,24.0]
+	},
+	"MountSquare.02":{
+	    "shapeType":"rectangular",
+	    "center":[ 957, 49.75 ],
+	    "wh_length":[24.0,24.0]
+	},
+	"MountSquare.03":{
+	    "shapeType":"rectangular",
+	    "center":[ 853.5, 0.0 ],
+	    "wh_length":[24.0,24.0]
+	}
+    }
+}

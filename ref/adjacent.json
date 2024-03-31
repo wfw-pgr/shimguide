@@ -1,0 +1,23 @@
+{
+    "settings":{
+	"trayName":"adjacent",
+	"holeRotation": 0.0,
+	"overlap":10.0,
+	"bbox":[ -270.0, -1020.0, 270.0, -650.0 ],
+	"pagesize":[297.0,420.0]
+    },
+    
+    "shape":{
+	"polyline_inXY.01":{
+	    "shapeType":"polyline_inXY",
+	    "label.edges":[4,4],
+	    "label.fraction":[0.25,0.75],
+	    "label.WL":[30.0,160.0], 
+	    "points_xy":[ [ -260.0, -1000.0 ],
+			  [ -260.0,  -700.0 ],
+			  [  260.0,  -700.0 ],
+			  [  260.0, -1000.0 ],
+			  [ -260.0, -1000.0 ] ]
+	}
+    }
+}

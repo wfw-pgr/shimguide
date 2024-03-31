@@ -1,0 +1,56 @@
+{
+    "settings":{
+	"trayName":"sector8",
+	"holeRotation":-315.0,
+	"overlap":10.0,
+	"bbox":[ 220.0, -350.0, 920.0, 350.0 ],
+	"pagesize":[297.0,420.0]
+    },
+    
+    "shape":{
+	"arc_inner":{
+	    "shapeType":"arc",
+	    "center":[0.0,0.0],
+	    "radius":272.0,
+	    "angle1":-22.5,
+	    "angle2":22.5
+	},
+	"line_inout":{
+	    "shapeType":"polyline_inRT",
+	    "center":[0.0,0.0],
+	    "linetype":"solid",
+	    "label.edges":[1,1,1],
+	    "label.fraction":[0.06,0.5,0.94],
+	    "label.WL":[30.0,160.0],
+	    "points_rt":[ [  272.0, 22.5 ],
+			  [  860.0, 22.5 ] ]
+	},
+	"arc_outer":{
+	    "shapeType":"arc",
+	    "center":[0.0,0.0],
+	    "radius":860.0,
+	    "angle1":22.5,
+	    "angle2":-22.5
+	},
+	"line_outin":{
+	    "shapeType":"polyline_inRT",
+	    "center":[0.0,0.0],
+	    "linetype":"solid",
+	    "label.edges":[1,1,1],
+	    "label.fraction":[0.06,0.5,0.94],
+	    "label.WL":[30.0,160.0],
+	    "points_rt":[ [  860.0, -22.5 ],
+			  [  272.0, -22.5 ] ]
+	},
+	"MountHole.01":{
+	    "shapeType":"circle",
+	    "center":[ 350.0, 0.0 ],
+	    "radius":21.5
+	},
+	"MountHole.02":{
+	    "shapeType":"circle",
+	    "center":[ 760.0, 0.0 ],
+	    "radius":21.5
+	}
+    }
+}

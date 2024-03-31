@@ -1,0 +1,95 @@
+{
+    "settings":{
+	"trayName":"disc",
+	"holeRotation":0.0,
+	"overlap":10.0,
+	"bbox":[ -275.0, -275.0, 275.0, 275.0],
+	"pagesize":[297.0,420.0]
+    },
+    
+    "shape":{
+	"arc1":{
+	    "shapeType":"arc",
+	    "center":[0.0,0.0],
+	    "radius":270.0,
+	    "angle1":-30.0,
+	    "angle2":30.0
+	},
+	"lines1":{
+	    "shapeType":"polyline_inRT",
+	    "center":[0.0,0.0],
+	    "linetype":"solid",
+	    "label.edges":[1],
+	    "label.fraction":[0.5],
+	    "label.WL":[100.0,350.0],
+	    "points_rt":[ [ 270.0, 60.0 ],
+			  [ 270.0, 30.0 ] ]
+	},
+	"arc2":{
+	    "shapeType":"arc",
+	    "center":[0.0,0.0],
+	    "radius":270.0,
+	    "angle1":60.0,
+	    "angle2":120.0
+	},
+	"lines2":{
+	    "shapeType":"polyline_inRT",
+	    "center":[0.0,0.0],
+	    "linetype":"solid",
+	    "label.edges":[1],
+	    "label.fraction":[0.5],
+	    "label.WL":[100.0,350.0],
+	    "points_rt":[ [ 270.0, 150.0 ],
+			  [ 270.0, 120.0 ] ]
+	},
+	"arc3":{
+	    "shapeType":"arc",
+	    "center":[0.0,0.0],
+	    "radius":270.0,
+	    "angle1":150.0,
+	    "angle2":210.0
+	},
+	"lines3":{
+	    "shapeType":"polyline_inRT",
+	    "center":[0.0,0.0],
+	    "linetype":"solid",
+	    "label.edges":[1],
+	    "label.fraction":[0.5],
+	    "label.WL":[100.0,350.0],
+	    "points_rt":[ [ 270.0, 240.0 ],
+			  [ 270.0, 210.0 ] ]
+	},
+	"arc4":{
+	    "shapeType":"arc",
+	    "center":[0.0,0.0],
+	    "radius":270.0,
+	    "angle1":240.0,
+	    "angle2":300.0
+	},
+	"lines4":{
+	    "shapeType":"polyline_inRT",
+	    "center":[0.0,0.0],
+	    "linetype":"solid",
+	    "label.edges":[1],
+	    "label.fraction":[0.5],
+	    "label.WL":[100.0,350.0],
+	    "points_rt":[ [ 270.0, 330.0 ],
+			  [ 270.0, 300.0 ] ]
+	},
+	"MountHole.01":{
+	    "shapeType":"circle",
+	    "center":[0.0,195.0],
+	    "radius":20.5
+	},
+	"MountHole.02":{
+	    "shapeType":"circle",
+	    "center":[-137.88582,-137.88582],
+	    "radius":20.5
+	},
+	"MountHole.03":{
+	    "shapeType":"circle",
+	    "center":[137.88582,-137.88582],
+	    "radius":20.5
+	}
+    }
+}

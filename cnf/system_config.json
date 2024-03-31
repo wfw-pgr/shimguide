@@ -1,0 +1,19 @@
+{
+    "01.DefaultFileMode":"search_latest",
+    "01.DefaultFileBase":"dat/shim_*.01",
+    "01.direct.inpFile1":"dat/before.01",
+    "01.direct.inpFile2":"dat/after.01",
+    "db.DefaultFile":"cnf/shimbolt_mod.db",
+    "Dhole.margin":-1.0,
+    "linewidth":0.001,
+    "nParallel":2,
+    "outframe":true,
+    "division.line.sw":true,
+    "division.line.nDiv":20,
+    "division.line.duty":0.2,
+    "centering":true,
+    "label.font.useTTF":true,
+    "label.font.name":"Hershey",
+    "label.font.path":"fonts/hershey_ttf/AVHersheySimplexLight.ttf",
+    "label.font.size":10.0
+}

@@ -1,0 +1,146 @@
+
+[ QUICK START MEMO ]
+
+  $ python pyt/go.py
+
+  or
+
+  $ python pyt/go.py --help
+
+
+
+[HOW_TO_USE]
+
+  [basics]
+
+    * prepare following files.
+
+      + .01 file ( [ tag vol x y z ]  )    (  2 files, for before & after,  are required )
+      + database file ( [tag x y z vol diameter trayID (x0 y0) ] )   ( x0,y0 are additional for lamp_shade )
+      + system_config.json file    ( stored in cnf/ directory )
+      + [trayName].json file       ( stored in cnf/ directory )
+
+    * use pyt/go.py to execute on command line.
+
+      $ python pyt/go.py           ( default run )
+
+
+  [editting the sytem_config.json]
+
+      + "01.DefaultFileMode" == "search_latest" or ( "direct" or "from_config" :: same )
+      + "01.DefaultFileBase" == (e.g.) "dat/shim_*.01". Use "*" to search .01 file name ( search_latest must be specified to use )
+      + "01.direct.inpFile1"=="dat/before.01"  ( direct or from_config must be specified to use. )
+      + "01.direct.inpFile2"=="dat/after.01"   ( direct or from_config must be specified to use. )
+      + "db.DefaultFile"=="cnf/shimbolt_mod.db" 
+      + "Dhole.margin"==-1.0  ( margin for each hole's diameter. )
+      + "linewidth"==0.001 ( linewidth of the laser cut line. )
+      + "nParallel"==1 ( merge into several pdf file for parallel cutting. )
+      + "outframe"==true   ( outFrame sw. prevent uncut region due to the rough paper alignment )
+      + "centering"==true  ( centering sw. )
+      + "label.font"=="Helvetica" ( font for the trayLabel. )
+      + "label.fontsize"==10.0 ( font size for trayLabel )
+
+  [command line arguments]
+
+    * to display all command line arguments, add -h / --help option to pyt/go.py
+
+      $ python pyt/go.py -h
+      ( or,   $ python pyt/go.py --help   )
+
+      -----
+
+      optional arguments:
+        -h, --help           show this help message and exit
+  	--previous PREVIOUS  previous 01 data file :: (e.g.) dat/before.01
+	--latest LATEST      latest 01 data file :: (e.g.) dat/after.01
+	--db DB              shim database file :: (e.g.) dat/shimbolt_mod.db
+	--action ACTION      choose from [ add / remove / all ]
+	--z Z                choose from [ upper / lower / all ]
+	--trayName TRAYNAME  trayName list or str :: (e.g.) 'sector1' or '[sector1,lamp_shade1]' etc...
+
+
+
+  [examples]
+
+    * specify .01 files ::
+
+      $ python pyt/go.py --previous dat/before.01 --latest dat/after.01
+
+
+    * specify .db file  ::
+
+      $ python pyt/go.py --db dat/shimbolt_mod.db
+
+
+    * obtain only upper / lower tray   ::
+
+      $ python pyt/go.py --z upper
+
+      $ python pyt/go.py --z lower
+
+      $ python pyt/go.py --z all   ( for both upper and lower tray )
+
+
+    * obtain only add / remove tray   ::
+
+      $ python pyt/go.py --action add
+
+      $ python pyt/go.py --action remove
+
+      $ python pyt/go.py --action all    ( for both add and remove tray )
+
+
+    * obtain only specified tray ::
+
+      $ python pyt/go.py --trayName sector1
+
+      $ python pyt/go.py --trayName lamp_shade18
+
+      $ python pyt/go.py --trayName [disc,sector4,lamp_shade8,lamp_shade18]    # DO NOT PUT spaces in list #
+
+      $ python pyt/go.py --action all    ( for all tray )
+
+
+    * clean up pdf/ directory ::
+
+      $ python pyt/go.py --clean
+
+
+    * multiple options... ::
+
+      $ python pyt/go.py --z upper --action add --trayName [lamp_shade18,disc,lamp_shade20] --clean
+
+
+
+  [utilities]
+
+    * archive as a .tar.gz file
+
+      $ python utl/save__targz.py
+
+
+    * initial .01 file making
+
+      $ python pyt/generate__initialShimData.py  --inpFile shim_01.01  --outFile shim_init.01
+
+      ( --inpFile is the reference file ( use ID & xyz position, and initialize flag = 0 ) )
+      ( --outFile is the output file name )
+
+    * pyt/make__scanParameterFile.py  :: make input parameter .json file without directly editting .json file.
+
+      $ python pyt/make__scanParameterFile.py
+      ( see the script for the detail. )
+
+    * pyt/display__shimPosition.py    :: display shim position.
+
+      $ python pyt/display__shimPosition.py
+      ( see the script for the detail. )
+
+
+    * modify database file to correct the shim tray grouping and overwrite x0, y0 position for side hole.
+
+      $ python pyt/modify__shimboltDatabase.py
+      ( see the script for the detail. )
+
+
+
